@@ -1,0 +1,9 @@
+.SideBar {
+    background-color: #86bfef;
+    box-shadow: 30;
+    width: 20%;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    border: 5px
+}
