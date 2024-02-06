@@ -1,8 +1,19 @@
 .Footer {
-    background-color: #e6e6e6;
-    color: white;
-    padding: 10px;
     text-align: center;
+    background-color: #5053de;
     color: white;
-    flex-direction: column-reverse;
+    font-size: .8em;
+    padding: 3px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.Footer a {
+    color: white;
+}
+
+.Footer p {
+    margin: 0
 }

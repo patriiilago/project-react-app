@@ -1,33 +1,16 @@
 import './App.css'
-import NavBar from './components/NavBar/NavBar'
-import SideBar from './components/Sidebar/SideBar'
-import Footer from './components/Footer/Footer'
+import HomePage from './components/HomePage/HomePage'
 
 function App() {
-  console.log("eeeeyyyy")
 
   return (
     <div className='App'>
 
-      <NavBar />
-
-      <SideBar />
-
-      <Footer />
+      <HomePage />
 
     </div>
 
   )
-
-
-
-
-
-
-
-
-
-
 }
 
 export default App

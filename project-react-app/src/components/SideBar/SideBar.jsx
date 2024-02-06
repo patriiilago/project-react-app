@@ -1,12 +1,11 @@
 import "./SideBar.css"
+
 const SideBar = () => {
     return (
-        <nav className="SideBar">
+        <header className="SideBar">
             <a href="#"> Home </a>
-            <hr></hr>
             <a href="#"> About</a>
-            <hr></hr>
-        </nav>
+        </header>
     )
 }
 

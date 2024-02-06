@@ -2,14 +2,23 @@
     background-color: #1a76c2;
     color: white;
     display: flex;
-    justify-content: space-around;
+    position: fixed;
+    justify-content: space-between;
     align-items: center;
+    padding: 5px 10px;
+    width: 100vw;
+    left: 0px;
+    top: 0px;
 
 }
 
+.NavBar h1 {
+    margin: 0;
+}
+
 .NavBar img {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
 
 
 
