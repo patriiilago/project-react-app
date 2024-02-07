@@ -19,7 +19,25 @@ footer p {
 
 .AboutPage,
 .NotFoundPage,
-.RecipesDetailsPage {
-    padding-top: 110px;
-    padding-left: 310px;
+.RecipesDetailsPage,
+.RecipesCard {
+    padding-top: 60px;
+    margin-left: 200px;
+
+}
+
+
+.RecipesCard {
+
+    justify-items: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.RecipesCard img {
+    width: 900px;
+    border: 2px solid;
+    border-color: #1a76c2;
+
 }

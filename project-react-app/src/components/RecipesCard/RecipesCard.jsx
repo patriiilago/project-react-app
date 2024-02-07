@@ -4,7 +4,9 @@ const RecipesCard = ({ recipesInfo, deleteRecipes }) => {
 
     return (
         <article className="RecipesCard">
-            <img src={recipesInfo.image} alt={recipesInfo.name} />
+            <figure>
+                <img src={recipesInfo.image} alt={recipesInfo.name} />
+            </figure>
             <section>
                 <h3>{recipesInfo.name}</h3>
                 <p>Calories: {recipesInfo.calories}</p>
