@@ -7,30 +7,24 @@ const RecipesList = () => {
 
     const [recipes, setRecipes] = useState(recipesData)
 
-    const deleteRecipes = recipesToDelete => {
+    const deleteRecipes = recipeToDelete => {
 
         const filteredRecipes = recipes.filter(elm => {
-            elm.id != recipesToDelete
+            return elm.id != recipeToDelete
         })
 
         setRecipes(filteredRecipes)
-
     }
-
 
     return (
         <section className='RecipesList'>
 
             <h2>Recipes List</h2>
-
             {
                 recipes.map(recipes => {
                     return <RecipesCard key={recipes.id} recipesInfo={recipes} deleteRecipes={deleteRecipes} />
                 })
-
             }
-
-
         </section>
 
     )

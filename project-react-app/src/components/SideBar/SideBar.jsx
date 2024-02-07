@@ -1,10 +1,19 @@
+import { NavLink } from "react-router-dom"
 import "./SideBar.css"
 
 const SideBar = () => {
     return (
         <header className="SideBar">
-            <a href="#"> Home </a>
-            <a href="#"> About</a>
+            <ul>
+                <li>
+                    <NavLink to='/' className={({ isActive }) => isActive ? "selected" : ""}>Inicio </NavLink>
+
+                </li>
+                <li>
+                    <NavLink to='/sobre-mi' className={({ isActive }) => isActive ? "selected" : ""}>Sobre mi </NavLink>
+
+                </li>
+            </ul>
         </header>
     )
 }
