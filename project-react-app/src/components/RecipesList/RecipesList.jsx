@@ -2,9 +2,10 @@ import { useState } from 'react'
 import recipesData from './../../recipes-data.json'
 import RecipesCard from '../RecipesCard/RecipesCard'
 import './../RecipesList/RecipesList.css'
+import NewRecipesForm from '../NewRecipeForm/NewRecipeForm'
+
 
 const RecipesList = () => {
-
     const [recipes, setRecipes] = useState(recipesData)
 
     const deleteRecipes = recipeToDelete => {
@@ -16,9 +17,22 @@ const RecipesList = () => {
         setRecipes(filteredRecipes)
     }
 
-    return (
-        <section className='RecipesList'>
 
+
+
+
+
+    const addNewRecipe = newRecipe => {
+        const recipesDataCopy = [...recipes]
+        recipesDataCopy.unshift(newRecipe)
+        setRecipes(recipesDataCopy)
+    }
+
+    return (
+
+
+        <section className='RecipesList'>
+            <NewRecipesForm addNewRecipe={addNewRecipe} />
             <h2>Recipes List</h2>
             {
                 recipes.map(recipes => {

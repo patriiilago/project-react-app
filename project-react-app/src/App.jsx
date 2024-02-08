@@ -17,13 +17,15 @@ function App() {
 
       <NavBar />
       <SideBar />
+      <main>
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/sobre-mi' element={<AboutPage />} />
+          <Route path='/details/:recipe_id' element={<RecipesDetailsPage />} />
+          <Route path='*' element={<NotFoundPage />} />
+        </Routes>
+      </main>
 
-      <Routes>
-        <Route path='/' element={<HomePage />} />
-        <Route path='/sobre-mi' element={<AboutPage />} />
-        <Route path='/details/:recipe_id' element={<RecipesDetailsPage />} />
-        <Route path='*' element={<NotFoundPage />} />
-      </Routes>
 
       <Footer />
 

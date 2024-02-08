@@ -17,12 +17,9 @@ footer p {
 }
 
 
-.AboutPage,
-.NotFoundPage,
-.RecipesDetailsPage,
-.RecipesCard {
-    padding-top: 60px;
-    margin-left: 200px;
+main {
+    padding-top: 110px;
+    margin-left: 230px;
 
 }
 

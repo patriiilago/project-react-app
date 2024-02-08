@@ -25,7 +25,7 @@ const AboutPage = () => {
                     <p>Óscar Gómez
                         <br />
                         <a href="https://github.com/OscarDev83?tab=repositories"> Git Hub </a>
-                        <a href="#"> Linkedin</a>
+                        <a href="https://www.linkedin.com/in/oscar-gomez-diez-b967202a/"> Linkedin</a>
                     </p>
                 </div>
 
