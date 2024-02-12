@@ -4,8 +4,6 @@ import recipesData from './../../recipes-data.json'
 const NewRecipesForm = ({ addNewRecipe }) => {
 
 
-
-
     const [image, setImage] = useState('')
     const [name, setName] = useState('')
     const [calories, setCalories] = useState(0)
@@ -28,8 +26,8 @@ const NewRecipesForm = ({ addNewRecipe }) => {
             celiac: celiac
         }
         addNewRecipe(newRecipe)
-
     }
+
 
     return (
 

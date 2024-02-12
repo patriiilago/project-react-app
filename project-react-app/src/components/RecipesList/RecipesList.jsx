@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import recipesData from './../../recipes-data.json'
 import RecipesCard from '../RecipesCard/RecipesCard'
-import './../RecipesList/RecipesList.css'
 import NewRecipesForm from '../NewRecipeForm/NewRecipeForm'
 
 
@@ -16,10 +15,6 @@ const RecipesList = () => {
 
         setRecipes(filteredRecipes)
     }
-
-
-
-
 
 
     const addNewRecipe = newRecipe => {

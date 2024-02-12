@@ -1,4 +1,4 @@
-import './NavBar.css'
+
 import logo from './../../assets/img/logo.png'
 
 const NavBar = () => {

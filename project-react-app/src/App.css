@@ -1,21 +1,22 @@
+Colores {
+    color: #2c90e3;
+    color: #59a8e9;
+    color: #1a76c2;
+    color: #e6e6e6;
+    color: #86bfef;
+}
+
 body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
+
 }
 
 img {
     width: 100%;
 }
-
-a {
-    text-decoration: none;
-}
-
-footer p {
-    margin: 0
-}
-
 
 main {
     padding-top: 110px;
@@ -23,13 +24,91 @@ main {
 
 }
 
+a {
+    text-decoration: none;
+}
+
+.NavBar {
+    background-color: #1a76c2;
+    color: white;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    width: 100vw;
+    left: 0px;
+    top: 0px;
+}
+
+.NavBar h1 {
+    margin: 0;
+}
+
+.NavBar img {
+    width: 100px;
+    height: 100px;
+    margin-right: 40px;
+}
+
+.SideBar {
+    background-color: #86bfef;
+    position: fixed;
+    left: 0;
+    top: 110px;
+    width: 200px;
+    height: 100%;
+    border-right: 1px solid #ccc;
+}
+
+.SideBar ul {
+    list-style: none;
+    position: absolute;
+    width: 150px;
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+.SideBar a {
+    color: white;
+
+}
+
+Footer {
+    text-align: center;
+    background-color: #1a76c2;
+    color: white;
+    font-size: .8em;
+    padding: 3px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.Footer a {
+    color: white;
+    font-size: 1.3em;
+
+}
+
+.Footer p {
+    margin: 0
+}
 
 .RecipesCard {
-
-    justify-items: center;
-    align-items: center;
+    justify-items: left;
     display: flex;
+}
 
+.RecipesCard p {
+    font-size: 1.5em;
+    color: #1a76c2;
+}
+
+.RecipesCard h3 {
+    color: #1a76c2;
+    font-size: 2em;
 }
 
 .RecipesCard img {
@@ -37,4 +116,71 @@ main {
     border: 2px solid;
     border-color: #1a76c2;
 
+}
+
+.RecipesList h2 {
+    color: #1a76c2;
+    font-size: 2em;
+}
+
+.recipeForm {
+    display: flex;
+
+}
+
+.tituloAbout {
+    color: #1a76c2;
+}
+
+.AboutPage p {
+    color: #86bfef;
+    font-size: 1.2em;
+}
+
+
+.profileCard {
+    align-items: center;
+    justify-items: center;
+}
+
+.profilePic {
+    width: 250px;
+    border-radius: 120px;
+    margin-top: 40px;
+
+}
+
+.cardsProf {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+
+
+}
+
+.githublogo,
+.linkedinlogo {
+    width: 50px;
+    margin: 0px 40px;
+}
+
+.nombreDev {
+    font-family: sans-serif;
+    color: #1a76c2;
+    margin-left: 40px;
+
+
+}
+
+.backToHome,
+button,
+.DetailsLink {
+    background-color: #59a8e9;
+    color: white;
+    padding: 15px;
+    margin: 30px 25px;
+    border-radius: 10px;
+    display: flow-root;
+    text-align: center;
+    border: none;
 }
