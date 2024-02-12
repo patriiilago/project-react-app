@@ -1,7 +1,9 @@
 import { useState } from "react"
+import recipesData from './../../recipes-data.json'
 
+const EditRecipesForm = (editRecipe) => {
 
-const NewRecipesForm = ({ addNewRecipe }) => {
+    const [formularioData, setFormularioData] = useState()
 
 
     const [image, setImage] = useState('')
@@ -18,21 +20,21 @@ const NewRecipesForm = ({ addNewRecipe }) => {
 
     const handleFromSubmit = event => {
         event.preventDefault()
-        const newRecipe = {
+        const recipeEdited = {
             image: image,
             name: name,
             calories: calories,
             servings: servings,
             celiac: celiac
         }
-        addNewRecipe(newRecipe)
+        editRecipe(recipeEdited)
     }
 
 
     return (
 
         < div >
-            <h4>Nueva Receta</h4>
+            <h4>Editar Receta</h4>
             <form className='recipeForm' onSubmit={handleFromSubmit}>
                 <label>
                     Imagen
@@ -54,9 +56,9 @@ const NewRecipesForm = ({ addNewRecipe }) => {
                     Para celiacos
                     <input type="checkbox" value={celiac} onChange={handleCeliacChange} />
                 </label>
-                <input type="submit" value='Crear Receta' />
+
             </form>
         </div >
     )
 }
-export default NewRecipesForm
+export default EditRecipesForm

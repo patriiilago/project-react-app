@@ -14,6 +14,7 @@ const RecipesCard = ({ recipesInfo, deleteRecipes }) => {
                 <p>{recipesInfo.celiac ? "Celiac" : "No celiac"} </p>
                 <button className="btn-delete" onClick={() => deleteRecipes(recipesInfo.id)}>Borrar receta </button>
                 <Link className='DetailsLink' to={`/details/${recipesInfo.id}`}>Ver detalles</Link>
+                <button className="btn-edit" onClick={() => editRecipe(editRecipe)} > Modificar</button>
             </section>
         </article >
     )
